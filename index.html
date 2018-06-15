@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Marcin Kołodziej</title>
+</head>
+<body class="container">
+   <header class="header" id="particles-js">
+        <div class="header__text">
+            <img src="img/logo-small.png" alt="Logo" class="header__logo">
+            <h1 class="header__text__name">Marcin <span>Koło</span>dziej</h1>
+            <h2 class="header__text__title">Front-end developer</h2>
+        </div>
+   </header>
+  
+<main class="main-container">
+
+    <section class="about">
+        <div class="content">
+            <div class="about__title">
+                <svg class="about__icon">
+                    <use xlink:href="img/sprites.svg#icon-info_outline"></use>
+                </svg>
+                <h2 class="heading-secondary">O mnie</h2>
+            </div>
+            <p class="paragraph">Jestem uczniem trzeciej klasy technikum informatycznego. Swoją przygodę z front-endem zacząłem w lutym tego roku i od tego czasu codziennie pogłębiam swoją wiedzę.</p><p class="paragraph">Jestem samoukiem, całą swoją wiedzę uzyskałem dzięki kursom, czytaniu dokumentacji oraz wykonywaniu projektów. Tworzenie sprawia mi przyjemność i daje satysfakcję, nie mam problemu z poświęcaniem dużej ilości czasu na rozwój. Obecnie rozwijam się głównie z zakresie React JS.</p><p class="paragraph">Poza kodowaniem moim zainteresowaniem są gry strategiczne, w szczególności Starcraft oraz poker. Jestem również miłośnikiem sim-racingu oraz fanem motoryzacji.</p>
+        </div>
+    </section>
+ 
+    <section class="tech">
+        <div class="content">
+        <div class="tech__title">
+         <h2 class="heading-secondary"><span>Technologie które wykorzystuję</span></h2>
+        </div>
+ 
+         <ul class="tech__list">
+             <li class="tech__list__item">
+                 <svg class="tech__list__item__icon">
+                     <use xlink:href="img/sprites.svg#icon-html5"></use>
+                 </svg>
+                 <span class="tech__list__item__desc tech__list__item__desc--html">HTML5</span>
+                 <p class="paragraph">Buduję szkielet strony w oparciu o semantykę HTML5</p>
+             </li>
+             <li class="tech__list__item">
+                 <svg class="tech__list__item__icon">
+                     <use xlink:href="img/sprites.svg#icon-css3"></use>
+                 </svg>
+                 <span class="tech__list__item__desc tech__list__item__desc--css">CSS3</span>
+                 <p class="paragraph">Projektuję responsywny layout z wykorzystaniem flexboxa, CSS grid oraz podejścia mobile first.</p>            
+             </li>
+             <li class="tech__list__item">
+                 <svg class="tech__list__item__icon">
+                     <use xlink:href="img/sprites.svg#icon-javascript"></use>
+                 </svg>
+                 <span class="tech__list__item__desc tech__list__item__desc--js">JavaScript (ES5+)</span>
+                 <p class="paragraph">Manipulacja DOMem, wykorzystywanie zewnętrznych API, ES5+, asynchroniczny JS</p>
+             </li>
+             <li class="tech__list__item">
+                 <svg class="tech__list__item__icon">
+                     <use xlink:href="img/sprites.svg#icon-sass"></use>
+                 </svg>
+                 <span class="tech__list__item__desc tech__list__item__desc--sass">Sass</span>
+                 <p class="paragraph">Wykorzystuję preprocessor Sass dla wydajniejszej pracy z CSS</p>
+             </li>
+             <li class="tech__list__item">
+                 <svg class="tech__list__item__icon">
+                     <use xlink:href="img/sprites.svg#icon-bootstrap"></use>
+                 </svg>
+                 <span class="tech__list__item__desc tech__list__item__desc--boot">Bootstrap</span>
+                 <p class="paragraph">Bootstrap pomaga mi w budowie szybkich prototypów aplikacji</p>
+             </li>
+             <li class="tech__list__item">
+                 <svg class="tech__list__item__icon">
+                     <use xlink:href="img/sprites.svg#icon-react"></use>
+                 </svg>
+                 <span class="tech__list__item__desc tech__list__item__desc--react">React</span>
+                 <p class="paragraph">Obecnie znam absolutne podstawy, lecz nauka Reacta to mój priorytet</p>
+             </li>
+             <li class="tech__list__item">
+                 <svg class="tech__list__item__icon">
+                     <use xlink:href="img/sprites.svg#icon-git"></use>
+                 </svg>
+                 <span class="tech__list__item__desc tech__list__item__desc--git">Git</span>
+                 <p class="paragraph">Znam podstawy Gita, potrafię wykonać podstawowe operacje</p>
+             </li>
+         </ul>
+        </div>
+    </section>
+ 
+    <section class="portfolio">
+        <div class="content">
+         <div class="portfolio__title">
+             <h2 class="heading-secondary">Moje projekty</h2>
+         </div>
+         <div class="portfolio__slider">
+            <div class="main-carousel">
+                <div class="carousel-cell">
+                    <div class="portfolio__item">
+                        <img class="portfolio__photo" src="img/pogodynka.png" alt="Pogodynka image">
+                        <h3 class="heading-portfolio">Pogodynka</h3>
+                        <div class="portfolio__desc">
+                        <p class="paragraph u-mb-sm">Prosta aplikacja pogodowa wykorzystująca dane z API wunderground, local storage oraz Bootstrapa 4.</p>
+                        <a href="http://pogodynka.xyz/" target="_blank" class="portfolio__link u-mr-md">Live</a>
+                        <a href="https://github.com/kolodziejm/pogodynka" target="_blank" class="portfolio__link">Github</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-cell">
+                        <img class="portfolio__photo" src="img/tasks.png" alt="Task Buddy image">
+                        <h3 class="heading-portfolio">Task Buddy</h3>
+                        <div class="portfolio__desc">
+                        <p class="paragraph u-mb-sm">Aplikacja To Do, wykorzystuje local storage do przechowywania zadań. Możliwość ustawienia priorytetu każdego taska.</p>
+                        <a href="https://kolodziejm.github.io/task-buddy/" target="_blank" class="portfolio__link u-mr-md">Live</a>
+                        <a href="https://github.com/kolodziejm/task-buddy" target="_blank" class="portfolio__link">Github</a>
+                        </div>
+                </div>
+                <div class="carousel-cell">
+                        <img class="portfolio__photo" src="img/poker.png" alt="Poker Sharks image">
+                        <h3 class="heading-portfolio">Poker Sharks</h3>
+                        <div class="portfolio__desc">
+                        <p class="paragraph u-mb-sm">Landing page fikcyjnej firmy oferującej materiały do nauki pokera. Wykonana z użyciem Sass, metodologii BEM oraz podejścia mobile-first</p>
+                        <a href="https://kolodziejm.github.io/poker-sharks/" target="_blank" class="portfolio__link u-mr-md">Live</a>
+                        <a href="https://github.com/kolodziejm/poker-sharks" target="_blank" class="portfolio__link">Github</a>
+                        </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+ 
+    <section class="contact">
+        <div class="content">
+        <div class="contact__title">
+             <h2 class="heading-secondary">Kontakt</h2>
+        </div>
+       
+        <ul class="contact__list">
+             <li class="contact__item">
+                     <svg class="contact__icon">
+                         <use xlink:href="img/sprites.svg#icon-envelope-o"></use>
+                     </svg>
+                     <a href="mailto:marcinkolodziej15@gmail.com" class="contact__desc"><strong>marcinkolodziej15@gmail.com</strong></a>
+             </li>
+             <li class="contact__item">
+                     <svg class="contact__icon">
+                         <use xlink:href="img/sprites.svg#icon-facebook"></use>
+                     </svg>
+                     <a href="https://www.facebook.com/ShadoWsc2" class="contact__desc" target="_blank"><strong>Marcin Kołodziej</strong></a>
+             </li>
+        </ul>
+    </div>
+    </section>
+</main>
+  
+   <footer class="footer">
+       <div class="content">
+       <p class="legal">Copyright &copy; Marcin Kołodziej 2018.</p>
+        </div>
+   </footer>
+
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
