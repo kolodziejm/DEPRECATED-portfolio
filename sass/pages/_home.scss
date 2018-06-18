@@ -1,0 +1,332 @@
+.container {
+    
+}
+
+// HEADER
+
+.header {
+    height: 100vh;
+    position: relative;
+    background-image:  url(../img/test.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+
+    &__logo {
+        position: absolute;
+        top: 0;
+        left: 10%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+    }
+
+    &__text {
+        position: absolute;
+        text-align: center;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(#000, .4);
+        padding: 1rem;
+        border-radius: 10px;
+
+        &__name {
+            color: $color-body-dark;
+            font-size: 4rem;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+
+            span {
+                color: $color-primary;
+            }
+        }
+
+        &__title {
+            color: $color-body-light;
+            font-size: 1.8rem
+        }
+    }
+}
+
+// ABOUT
+
+.about {
+    padding: 1rem 1rem;
+    background-color: $color-body;
+    border-bottom: 1px solid $color-primary;
+
+    &__title {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 2.5rem;
+    }
+
+    &__icon {
+        height: 6.5rem;
+        width: 6.5rem;
+        fill: $color-primary;
+        margin-left: -1rem;
+        pointer-events: none
+    }
+
+    h2 {
+        margin-left: 1rem;
+        align-self: center;
+        color: $color-grey-dark;
+    }
+
+    .paragraph {
+        margin-top: .3rem;
+        padding: .3rem;
+    }
+
+    @include respond(lg) {
+        padding: 3rem 1rem;
+    }
+}
+
+// TECH
+
+.tech {
+    padding: 1rem 1rem;
+    background-color: $color-primary;
+    @include respond(sm) {
+        background: linear-gradient(to right, rgba(199,141,109, .92), rgba(199,141,109, .92)), url(../img/tech.png) no-repeat fixed center;
+    }
+    
+    text-align: center;
+
+    h2 {
+        color: $color-body-light;
+    }
+
+    &__title {
+        color: $color-body-dark;
+        text-align: center;
+        margin-top: 2rem;
+        background-color: rgba(#000, .3);
+        display: inline-block;
+        padding: 2rem 4rem;
+        border-radius: 10px;
+        
+    }
+
+    &__list {
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        @include respond(sm) {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(28rem, 32rem));
+            grid-template-rows: repeat(3, 1fr);
+            justify-items: center;
+            align-items: center;
+        }
+
+        @include respond(md) {
+            grid-template-columns: repeat(3, minmax(28rem, 35rem));
+            grid-template-rows: repeat(3, min-content);
+        }
+
+        &__item {
+            margin-top: 3rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(243,243,243, .95);
+            padding: 1rem 0;
+            box-shadow: 0 1rem 2rem rgba(0,0,0,.4);
+            max-width: 20rem;
+            transition: all .4s;
+
+            &:hover {
+                transform: scale(1.08);
+            }
+
+            @include respond(sm) {
+                max-width: 22rem;
+            }
+
+            height: 28rem;
+            border-radius: 10px;
+
+            .paragraph {
+                padding: 1rem 1rem 0 1rem;
+            }
+
+
+            &:first-of-type {
+                margin-top: 4rem;
+            }
+
+            &:last-of-type {
+                margin-bottom: 3rem;
+
+                @include respond(sm) {
+                   grid-column: 1 / -1;
+                }
+            }
+
+            &__icon {
+                height: 8rem;
+                width: 8rem;
+                align-self: center;
+                pointer-events: none
+            }
+
+            &__rating {
+              color: black;
+            }
+
+            &__desc {
+                font-size: 1.6rem;
+                text-align: center;
+                margin-top: 1rem;
+
+                &--html {
+                    color: #e64e30;
+                }
+
+                &--css {
+                    color: #0d7abe;
+                }
+
+                &--js {
+                    color: #ac9930;
+                }
+
+                &--sass {
+                    color: #cd6496;
+                }
+
+                &--boot {
+                    color: #705299;
+                }
+
+                &--react {
+                    color: #4fbdd8;
+                }
+
+                &--git {
+                    color: #f34e39;
+                }
+            }
+
+        }
+    }
+}
+
+// PORTFOLIO
+
+.portfolio {
+    padding: 1rem 1rem;
+    text-align: center;
+    background-color: $color-body-light;
+    border-bottom: 1px solid $color-primary;
+
+
+    &__slider {
+        max-width: 50rem; // MEDIA
+
+        @include respond(sm) {
+            max-width: 640px;
+        }
+
+        @include respond(md) {
+            max-width: 720px;
+        }
+
+        margin: 2rem auto;
+    }
+
+    &__photo {
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        display: block;
+        max-height: 100%;
+    }
+
+    &__desc {
+        padding: 2rem;
+    }
+
+    &__link {
+        font-size: $default-font-size;
+        text-decoration: none;
+        color: $color-primary;
+        transition: all .4s;
+
+        &:hover {
+            color: $color-grey-light;
+        }
+    }
+
+    .main-slider {
+        
+    }
+
+    .carousel-cell {
+        width: 100%;
+        background-color: $color-body-light;
+    }
+}
+
+// CONTACT
+
+.contact {
+    padding: 3rem 1rem;
+    text-align: center;
+    color: $color-grey-dark;
+    
+    background-position: bottom;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+
+    &__title {
+        margin-bottom: 1.5rem;
+    }
+
+    &__list {
+
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        // justify-content: center;
+
+        &:not(:last-child) {
+            margin-bottom: 2rem;
+        }
+    }
+
+    &__icon {
+        height: 4.5rem;
+        width: 4.5rem;
+        fill: $color-grey-dark;
+        align-self: flex-start;
+    }
+
+    &__desc {
+        margin-left: 2rem;
+        font-size: 1.4rem;
+        text-decoration: none;
+        color: $color-primary;
+        transition: all .4s;
+
+        &:hover {
+            color: $color-grey-light;
+        }
+
+        &:hover.contact__icon {
+            fill: $color-secondary;
+        }
+    }
+
+}

@@ -1,0 +1,23 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    color: $color-font;
+}
+
+.heading-secondary {
+    font-size: 2.5rem;
+}
+
+.heading-portfolio {
+    font-size: 2.2rem;
+    padding: 1rem 0;
+}
+
+.paragraph {
+    font-size: $default-font-size;
+}
+
+.legal {
+    font-size: 1.5rem;
+}

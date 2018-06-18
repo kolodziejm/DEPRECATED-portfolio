@@ -1,0 +1,47 @@
+*,
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%; // 1 rem = 10px;
+
+    @include respond(sm) {
+        font-size: 64.5%;
+    }
+
+    @include respond(md) {
+        font-size: 65.5%;
+    }
+
+    @include respond(lg) {
+        font-size: 69.5%;
+    }
+}
+
+body {
+    box-sizing: border-box;
+    background-color: $color-body;
+    color: $color-font;
+    overflow-x: hidden;
+}
+
+.content {
+    max-width: 60rem;
+    margin: 0 auto;
+
+    @include respond(sm) {
+        max-width: 850px;
+    }
+
+    @include respond(md) {
+        max-width: 960px;
+    }
+
+    @include respond(lg) {
+        max-width: 1200px;
+    }
+}

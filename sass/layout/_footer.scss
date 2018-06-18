@@ -1,0 +1,12 @@
+.footer {
+    padding: 2rem 1rem;
+    background-color: $color-primary;
+    text-align: right;
+    border-top: 1px solid $color-body-light;
+    border-top: 1px solid $color-primary;
+
+    .legal {
+        color: $color-four;
+        margin-right: 2rem
+    }
+}
